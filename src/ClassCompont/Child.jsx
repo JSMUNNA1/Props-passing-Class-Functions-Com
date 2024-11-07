@@ -17,6 +17,11 @@ export default class Child extends Component {
           >
             Change value
           </button>
+          <button
+            onClick={() => {
+              this.props.fun2({ age: 233 });
+            }}
+          >
         </div>
       </>
     );
