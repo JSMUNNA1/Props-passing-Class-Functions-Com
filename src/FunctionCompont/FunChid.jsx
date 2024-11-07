@@ -7,7 +7,7 @@ export default function FunChild({ name, age, fun }) {
       <div>{age}</div>
       <button onClick={fun}>Change</button>
       <FunGrandChild fun={fun}></FunGrandChild>   
-      {/* we can also change the props values and also say we can communicate with the parent using CallBack Function and passing the function in Event  */}
+      {/* we can`t change the  values of props but using callback and event call the function in parent componet function and change the value and also say we can communicate with the parent using CallBack Function and passing the function in Event  */}
     </>
   );
 }
