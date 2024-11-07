@@ -9,7 +9,14 @@ export default class Child extends Component {
     return (
       <>
         <div>
-          <h1>{this.props.state.name}h1</h1>
+          <h1>{this.props.state.name}</h1>
+          <button
+            onClick={() => {
+              this.props.fun(44);
+            }}
+          >
+            Change value
+          </button>
         </div>
       </>
     );
