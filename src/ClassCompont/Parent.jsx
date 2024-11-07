@@ -21,7 +21,8 @@ export default class Parent extends Component {
    
     return (
       <>
-        <Child state={this.state} fun={this.fun} fun2={this.setState.bind(this)}></Child>
+        <Child state={this.state} fun={this.fun} fun2={this.setState.bind(this)}></Child> 
+        {/* you can pass anything as a props. Like:object, any premitiveValue,Component ,etc..*/}
         <h1>{this.state.age}</h1>
       </>
     );
