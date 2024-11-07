@@ -10,6 +10,12 @@ export default class Parent extends Component {
       class: "EC1",
     };
   }
+  fun = (val) => {
+    this.setState({
+      age: val,
+    });
+    console.log("22");
+  };
 
   render() {
      this.setState({
@@ -17,7 +23,8 @@ export default class Parent extends Component {
     });
     return (
       <>
-        <Child state={this.state}></Child>
+        <Child state={this.state} fun={this.fun}></Child>
+        <h1>{this.state.age}</h1>
       </>
     );
   }
