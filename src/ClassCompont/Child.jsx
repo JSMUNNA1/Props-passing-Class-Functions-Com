@@ -23,6 +23,7 @@ export default class Child extends Component {
             }}
           >
         </div>
+          {this.props.childern}
       </>
     );
   }
