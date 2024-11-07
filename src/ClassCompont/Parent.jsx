@@ -18,9 +18,7 @@ export default class Parent extends Component {
   };
 
   render() {
-     this.setState({
-      age: 27,
-    });
+   
     return (
       <>
         <Child state={this.state} fun={this.fun} fun2={this.setState.bind(this)}></Child>
