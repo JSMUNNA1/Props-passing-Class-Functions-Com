@@ -23,7 +23,7 @@ export default class Parent extends Component {
     });
     return (
       <>
-        <Child state={this.state} fun={this.fun}></Child>
+        <Child state={this.state} fun={this.fun} fun2={this.setState.bind(this)}></Child>
         <h1>{this.state.age}</h1>
       </>
     );
